@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.2.1.js"></script>
@@ -10,19 +11,19 @@
 </head>
 <body>
   <header class="jumbotron">
-    <h1>Pig Dice Game!</h1>
+    <h1>Pig Dice Game!!</h1>
   </header>
     <div class="container">
       <form id = "playernames">
         <div class="form-group">
           <label for="player1">Player1 Name:</label>
-          <input type="text" class="form-group" id="player1" required>
+          <input type="text" class="form-group" id="player1name" required>
         </div>
         <div class="form-group">
           <label for="player2">Player2 Name:</label>
-          <input type="text" class="form-group" id="player2" required>
+          <input type="text" class="form-group" id="player2name" required>
         </div>
-        <button type="submit" class="btn btn-info">Play</button>
+          <button id="start" type="submit" class="btn btn-info">Play</button>
       </form>
 
     <div id="rules">
@@ -43,38 +44,35 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h2 id="player1">Player1Name</h2>
-          <button type="submit" class="btn btn-info">Roll</button>
-          <button type="submit" class="btn btn-danger">Hold</button>
+          <h2 id="player1">Player1:<span id="player1name"><span></h2>
+          <button id="roll1" type="submit" class="btn btn-info">Roll</button>
+          <button id="hold1" type="submit" class="btn btn-danger">Hold</button>
 
           <h2>SCORE:</h2>
-            <ul>
-              <li id="roundscore">Round Score:</li>
-              <li id="totalscore">Total Score:</li>
 
-            </ul>
+            <p>Round Score: <span id="roundtotal1"></span></p>
+            <p>Total Score: <span id="totalscore1"></span></p>
+
+
         </div>
 
 
         <div class="row">
           <div class="col-md-6">
-            <h2 id="player2">Player2Name</h2>
-            <button type="submit" class="btn btn-info">Roll</button>
-            <button type="submit" class="btn btn-danger">Hold</button>
+            <h2 id="player2">Player2:<span id="player2name"><span></h2>
+            <button id="roll2" type="submit" class="btn btn-info">Roll</button>
+            <button id="hold2" type="submit" class="btn btn-danger">Hold</button>
 
             <h2>SCORE:</h2>
-              <ul>
-                <li id="roundscore">Round Score:</li>
-                <li id="totalscore">Total Score:</li>
-              </ul>
+
+              <p id="roundscore">Round Score: <span id="roundtotal2"></span></p>
+              <p id="totalscore">Total Score: <span id="totalscore2"></span></p>
+
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
-
 
 </body>
 </html>

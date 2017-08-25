@@ -2,4 +2,15 @@
   background-color: black;
   color: white;
   text-align: center;
+  font-family: 'Slabo 27px', serif;
+
+}
+#rules{
+  font-family: 'Slabo 27px', serif;
+  font-size: 150%;
+}
+.container{
+  font-family: 'Slabo 27px', serif;
+  font-size: 120%;
+
 }
