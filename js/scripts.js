@@ -8,15 +8,28 @@
 //   console.log("your rolled "+die+" for a score of " +score)
 // }
 // business logic
-var player1="";
-var player2="";
+// var player1="";
+// var player2="";
+//
+// var die = function () {
+//
+//   return Math.floor(Math.random()*6 +1);
+// }
+//
+// function player(turn) {
+//
+//
+// }
+$(document).ready(function() {
+  $("form#playernames").submit(function(event) {
+    event.preventDefault();
+    var inputtedPlayername1 = $("input#player1name").val();
+    var inputtedPlayername2 = $("input#player2name").val();
 
-var die = function () {
+    $(".player1name").text(inputtedPlayername1);
+    $(".player2name").text(inputtedPlayername2);
 
-  return Math.floor(Math.random()*6 +1);
-}
 
-function player(turn) {
-  
 
-}
+  })
+});
